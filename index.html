@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Конверт</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <header id="tmid">
+    <h1>Заметки</h1>
+<img id="profile" onclick="pro()" src="https://img.icons8.com/fluency/90/000000/cat-profile.png"/>
+
+</header>
+  <div class="">
+
+    <form>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="30" height="30"
+viewBox="0 0 50 50"
+style=" fill:#000000;"><path d="M 13 4 C 8.0414839 4 4 8.0414839 4 13 L 4 37 C 4 41.958516 8.0414839 46 13 46 L 37 46 C 41.958516 46 46 41.958516 46 37 L 46 13 C 46 8.0414839 41.958516 4 37 4 L 13 4 z M 13 6 L 37 6 C 38.131143 6 39.194802 6.2714581 40.138672 6.7441406 L 38.337891 9.6816406 L 38.337891 11.095703 C 39.348926 12.009139 42.125484 13.812936 44 14.589844 L 44 16.466797 C 42.471626 15.945496 39.59128 14.509475 37.654297 12.734375 C 36.571516 14.552087 34.743335 17.668472 33.019531 21 L 14 21 A 1.0001 1.0001 0 1 0 14 23 L 32.033203 23 C 31.369019 24.359903 30.742002 25.709888 30.222656 27 L 14 27 A 1.0001 1.0001 0 1 0 14 29 L 29.478516 29 C 28.907632 30.721475 28.604596 32.219208 28.740234 33.28125 L 28.648438 33.464844 C 27.949799 34.46645 26.135501 34.982551 25.009766 34.988281 C 24.027967 34.992981 23.571673 34.668783 22.904297 34.1875 C 22.236921 33.706217 21.333333 33 20 33 C 18.666667 33 17.768418 33.672995 16.986328 34.142578 C 16.204238 34.612161 15.46928 35 14 35 A 1.0001 1.0001 0 1 0 14 37 C 15.86872 37 17.132215 36.387839 18.015625 35.857422 C 18.899035 35.327005 19.333333 35 20 35 C 20.666667 35 21.019251 35.29483 21.734375 35.810547 C 22.449499 36.326264 23.50333 36.995565 25.019531 36.988281 C 25.792806 36.984355 26.743552 36.863238 27.667969 36.533203 A 1.0001165 1.0001165 0 0 0 29.400391 36.435547 L 30.279297 34.675781 C 34.043084 33.54361 43.099827 18.649383 44 17.158203 L 44 37 C 44 40.877484 40.877484 44 37 44 L 13 44 C 9.1225161 44 6 40.877484 6 37 L 6 13 C 6 9.1225161 9.1225161 6 13 6 z M 14 15 A 1.0001 1.0001 0 1 0 14 17 L 32 17 A 1.0001 1.0001 0 1 0 32 15 L 14 15 z"></path></svg>
+    <br><input id="text1" type="text" name="" value="" placeholder="Введите название"></br>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-app-indicator" viewBox="0 0 16 16">
+  <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
+  <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+</svg>
+    <br><textarea id="text2" name="name" rows="10" cols="40" placeholder="Введите текст" value = ""></textarea></br>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm-fill" viewBox="0 0 16 16">
+      <path d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"></path>
+    </svg>
+    <br><input id="time" type="time" name="" value=""></br>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+  <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+</svg>
+    <br><input id="date" type="date" name="" value=""></br>
+    <br><input id="seefunclassbtn" type="submit" name="" onclick="seefun()" value="сохранить"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="swl" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+</svg></br>
+
+</form>
+</div>
+<div class="">
+  <button onclick="img()" type="button" id="btnupd" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"></path>
+  <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25img().25 0 0 0 8 4.466z"></path>
+</svg>
+                Заменить иконку профиля
+              </button>
+</svg>
+              </button>
+</div>
+  <script>
+
+    function seefun() {
+      var name = document.getElementById('text1').value;
+      var text = document.getElementById('text2').value;
+      var time = document.getElementById('time').value;
+      var date = document.getElementById('date').value;
+      var all  = name + ":  " + text +" В "+ time +" "+ date;
+      if (name == "" || text =="" ) {
+        alert("Введите все поля");
+      }
+      else {
+        document.write(all).value;
+      }
+
+    }
+    function clear() {
+      location.reload(e);
+    }
+    function pro() {
+    var nam =  prompt("Как вас зовут?");
+    alert("Привет, " + nam);
+    document.getElementsByTagName('header').innerHTML;
+    }
+
+    function reform() {
+
+    }
+
+    var n = 0;
+    var imgs = new Array("imgs/cat.png", "imgs/img1.1.png", "imgs/woman.png", "https://img.icons8.com/fluency/90/000000/cat-profile.png");
+    var el = document.getElementById("profile");
+
+    function img()
+    {
+        n++;
+
+        if (n == imgs.length)
+        {
+            n = 0;
+        }
+
+        el.src = imgs[n];
+    }
+  </script>
+  <style>
+  #profile{
+    margin-left: 200px;
+    margin-top: -43px;
+  }
+  #profile:hover{
+    transform: rotate(360deg) scale(1.07);
+    transition: 1s;
+  }
+  header {
+    height: 100px;
+    background-color: #1a1a1a;
+  }
+input {
+     border-radius: 6px;
+      background-color: #ffff66;
+      color: #1a1a1a;
+      width: inherit;
+      height: inherit;
+      border-color: #ffff66;
+    }
+    #swl{
+      margin-left: -20px;
+    }
+    input:hover {
+      background-color: #ff9999;
+       transition: 0.4s;
+
+
+    }
+    input:focus{
+      border: 3px solid #ffff66 ;
+            background-color: #ff9999;
+    }
+     #seefunclassbtn{
+       border: 10px solid #ffff66;
+       border-radius: 8px;
+       width: 150px;
+       transition: 1;
+     }
+
+    #seefunclassbtn:hover{
+      border: 10px solid #ff9999;
+      transition: 1;
+      box-shadow: 0 0 30px red;
+      transform: rotate(8deg);
+
+      transition: 1;
+    }
+    #btnupd{
+      margin-top: 30px;
+    }
+    h1 {
+      color: white;
+    }
+
+    textarea {
+      border-radius: 9px;
+       background-color: #ffff66;
+       color: #1a1a1a;
+       width: inherit;
+       height: inherit;
+       border-color: #ffff66;
+    }
+    textarea:focus{
+            border: 8px solid #ffff99;
+            transition: 1s;
+    }
+  </style>
+</body>
