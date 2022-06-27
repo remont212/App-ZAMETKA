@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <style>img[alt="www.000webhost.com"]{display: none;}</style>
+  <link rel="icon" href="https://img.icons8.com/stickers/16/plus.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,7 +17,7 @@
 </header>
   <div class="">
 
-    <form>
+    <form method="post">
       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 width="30" height="30"
 viewBox="0 0 50 50"
@@ -95,6 +97,21 @@ style=" fill:#000000;"><path d="M 13 4 C 8.0414839 4 4 8.0414839 4 13 L 4 37 C 4
 
         el.src = imgs[n];
     }
+    document.addEventListener("DOMContentLoaded", function() { // событие загрузки страницы
+
+    // выбираем на странице все элементы типа textarea и input
+    document.querySelectorAll('textarea, input').forEach(function(e) {
+        // если данные значения уже записаны в sessionStorage, то вставляем их в поля формы
+        // путём этого мы как раз берём данные из памяти браузера, если страница была случайно перезагружена
+        if(e.value === '') e.value = window.sessionStorage.getItem(e.name, e.value);
+        // на событие ввода данных (включая вставку с помощью мыши) вешаем обработчик
+        e.addEventListener('input', function() {
+            // и записываем в sessionStorage данные, в качестве имени используя атрибут name поля элемента ввода
+            window.sessionStorage.setItem(e.name, e.value);
+        })
+    })
+
+});
   </script>
   <style>
   #profile{
@@ -164,5 +181,7 @@ input {
             border: 8px solid #ffff99;
             transition: 1s;
     }
+
   </style>
+b
 </body>
